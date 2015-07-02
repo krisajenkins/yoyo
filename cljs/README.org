@@ -25,6 +25,9 @@ In your system:
                        :main myapp.ui.app
 
                        :externs [...]
+                       
+                       :foreign-libs [{:file "some/classpath/file.js"
+                                       :provides ["some.new.namespace"]}]
 
                        :dev {:optimizations :none
                              :pretty-print? true}
